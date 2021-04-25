@@ -1,12 +1,3 @@
-/***************************************************************
- * Name:      SigrokLcdMain.h
- * Purpose:   Defines Application Frame
- * Author:     ()
- * Created:   2017-05-31
- * Copyright:  ()
- * License:
- **************************************************************/
-
 #ifndef SIGROKLCDMAIN_H
 #define SIGROKLCDMAIN_H
 
@@ -228,4 +219,4 @@ class SigrokLcdFrame: public wxFrame//, public wxThreadHelper
 ////    wxPrintf("%c", m_data[100]);
 //}
 
-#endif // SIGROKLCDMAIN_H
+#endif

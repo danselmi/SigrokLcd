@@ -1,12 +1,3 @@
-/***************************************************************
- * Name:      SigrokLcdApp.cpp
- * Purpose:   Code for Application Class
- * Author:     ()
- * Created:   2017-05-31
- * Copyright:  ()
- * License:
- **************************************************************/
-
 #include "SigrokLcdApp.h"
 
 //(*AppHeaders

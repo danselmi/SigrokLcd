@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="LcdTest" />
+		<Option title="SigrokLcd" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -42,7 +42,6 @@
 			<Add option="`pkg-config glibmm-2.4 --cflags`" />
 			<Add option="`pkg-config libsigrokcxx --cflags`" />
 			<Add option='[[if (GetCompilerFactory().GetCompilerVersionString(_T(&quot;gcc&quot;)) &gt;= _T(&quot;4.8.0&quot;)) print(_T(&quot;-Wno-unused-local-typedefs&quot;));]]' />
-			<Add directory="../../../../usr/local/include" />
 		</Compiler>
 		<Linker>
 			<Add option="`wx-config --libs`" />
@@ -63,16 +62,13 @@
 		<Unit filename="leds.xpm" />
 		<Unit filename="wxsmith/LcdTestframe.wxs" />
 		<Extensions>
-			<envvars />
-			<code_completion />
-			<debugger />
+			<lib_finder disable_auto="1" />
 			<wxsmith version="1">
 				<gui name="wxWidgets" src="LcdTestApp.cpp" main="LcdTestFrame" init_handlers="necessary" language="CPP" />
 				<resources>
 					<wxFrame wxs="wxsmith/LcdTestframe.wxs" src="LcdTestMain.cpp" hdr="LcdTestMain.h" fwddecl="0" i18n="1" name="LcdTestFrame" language="CPP" />
 				</resources>
 			</wxsmith>
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

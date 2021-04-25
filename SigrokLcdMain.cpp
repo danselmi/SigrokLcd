@@ -1,12 +1,3 @@
-/***************************************************************
- * Name:      SigrokLcdMain.cpp
- * Purpose:   Code for Application Frame
- * Author:     ()
- * Created:   2017-05-31
- * Copyright:  ()
- * License:
- **************************************************************/
-
 #include "SigrokLcdMain.h"
 #include <wx/msgdlg.h>
 
@@ -281,7 +272,7 @@ void SigrokLcdFrame::OnConnect(wxCommandEvent& event)
 
         for (auto key : configKeys)
         {
-            if ( key == sigrok::ConfigKey::MULTIMETER )
+            if ( key == sigrok::ConfigKey::MULTIMETER || key == sigrok::ConfigKey::POWERMETER )
             {
                 wxString str (wxString::FromUTF8(driverEntry.first.c_str()));
                 Multimeters.Add(str);
